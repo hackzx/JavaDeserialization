@@ -42,4 +42,4 @@ http://www.secpulse.com/archives/40420.html
 http://www.iswin.org/2015/11/13/Apache-CommonsCollections-Deserialized-Vulnerability/  
 https://github.com/foxglovesec/JavaUnserializeExploits
 https://github.com/njfox/Java-Deserialization-Exploit  
-
+http://zone.wooyun.org/content/23905
