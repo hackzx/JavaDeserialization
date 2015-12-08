@@ -61,9 +61,15 @@ Main.java的作用是生成一個從url下載jar包的payload，jar包執行反�
 [Main.java](http://www.iswin.org/2015/11/13/Apache-CommonsCollections-Deserialized-Vulnerability/ "TransformedMap的实现方式")  
 [weblogic.py](https://github.com/schinkelg/JavaUnserializeExploits/blob/master/weblogic.py "自動添加包頭的修正腳本")
 
+###jenkins
+
+https://github.com/CaledoniaProject/jenkins-cli-exploit  
+
+
 --
 
 更多更多的鏈接：  
+http://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/  
 http://www.secpulse.com/archives/40420.html  
 http://www.iswin.org/2015/11/13/Apache-CommonsCollections-Deserialized-Vulnerability/  
 https://github.com/foxglovesec/JavaUnserializeExploits  

