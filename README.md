@@ -20,7 +20,7 @@ Usage: java -jar ysoserial-[version]-all.jar [payload type] '[command to execute
 ```
 [ysoserial-0.0.2-all.jar](https://github.com/frohoff/ysoserial/releases)  
 ####二  
-https://github.com/njfox/Java-Deserialization-Exploit  
+[JBossExploit](https://github.com/njfox/Java-Deserialization-Exploit)  
 暫未測試。
 
 
