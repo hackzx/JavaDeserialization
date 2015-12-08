@@ -40,6 +40,6 @@ Main.java的作用是生成一個從url下載jar包的payload，jar包執行反�
 通用漏洞可以從這裡總結：  
 http://www.secpulse.com/archives/40420.html  
 http://www.iswin.org/2015/11/13/Apache-CommonsCollections-Deserialized-Vulnerability/  
-https://github.com/foxglovesec/JavaUnserializeExploits
+https://github.com/foxglovesec/JavaUnserializeExploits  
 https://github.com/njfox/Java-Deserialization-Exploit  
-http://zone.wooyun.org/content/23905
+http://zone.wooyun.org/content/23905  
