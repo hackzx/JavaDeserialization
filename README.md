@@ -1,4 +1,7 @@
 ## JavaDeserialization
+不怎麼能用。
+
+--
 
 ###jboss：
 #####一
