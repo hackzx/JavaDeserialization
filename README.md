@@ -2,7 +2,7 @@
 
 
  
-用[reshell.jar](https://github.com/hackzx/JavaDeserialization/raw/master/reshell.jar)生成反弹shell的payload，然后jdexp.py执行。
+用[reshell.jar](https://github.com/hackzx/JavaDeserialization/raw/master/reshell.jar)生成反弹shell的payload，然后[jdexp.py](https://github.com/hackzx/JavaDeserialization/raw/master/jdexp.py)执行。
 
 ```
 ▶ python jdexp.py -h
