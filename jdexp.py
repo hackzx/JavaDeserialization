@@ -57,7 +57,7 @@ def weblogic():
 
 
 if args.jboss!=True and args.weblogic!=True:
-	print "至少输入一个目标应用吧？(-jboss, -weblogic)"
+	print "至少输入一个目标类型吧？(-jboss, -weblogic)"
 if args.jboss==True:
 	jboss()
 if args.weblogic==True:
