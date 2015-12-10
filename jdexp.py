@@ -7,7 +7,7 @@ import argparse
 import socket
 import struct
 
-parser = argparse.ArgumentParser(description='囊括weblogic和jboss的发送脚本，先用java.jar生成payload。')
+parser = argparse.ArgumentParser(description='先用reshell.jar生成payload。')
 parser.add_argument("-jboss", help="hack jboss", action="store_true")
 parser.add_argument("-weblogic", help="hack weblogic", action="store_true")
 parser.add_argument("host", help="remote domain/IP")
