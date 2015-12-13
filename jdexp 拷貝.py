@@ -6,56 +6,8 @@ import sys
 import argparse
 import socket
 import struct
-import time
 
-m = [ [c for c in line] for line in '''...................................................
-...XXXXXX.....XXXXX..XXXXX.XXXXX.....XXXXX.XXXXX...
-...X.....X....X...X..X...X..X...X...X...X..X...X...
-...X......X...X...X..X...X...X...X.X...X...X...X...
-...X...X...X..X...X..X...X....X...X...X....X...X...
-...X...XX...X.X...X..X...X.....X.....X.....X...X...
-...X...X.X...XX...X..X...X.....X.....X.....X...X...
-...X...X..X...X...X..X...X....X...X...X....X...X...
-...X...X...X......X..X...X...X...X.X...X...X...X...
-...X...X....X.....X..X...X..X...X...X...X..X...X...
-...XXXXX....XXXXXXX..XXXXX.XXXXX.....XXXXX.XXXXX...
-...................................................'''.split ('\n') ]
-
-def flood (matrix, start):
-    maxX = len (matrix [0] )
-    maxY = len (matrix)
-    tbf = [start]
-    while tbf:
-        x, y = tbf [0]
-        tbf = tbf [1:]
-        if x < 0 or x >= maxX or y < 0 or y >= maxY: continue
-        if matrix [y] [x] == 'X': continue
-        matrix [y] [x] = 'X'
-        tbf += [ (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1) ]
-        # print ('\x1b[0J\x1b[1;1H')
-        print ('\x1b[1J\x1b[1;1H')
-        for line in matrix: print (''.join (line) )
-        time.sleep (.003)
-
-if len(sys.argv) == 1:
-	flood (m, (0, 0) )
-	print '''\nusage: test.py [-h] [-jboss] [-weblogic] host port payload
-
-先用reshell.jar生成payload。
-
-positional arguments:
-  host        remote domain/IP
-  port        remote port
-  payload     local payload file
-
-optional arguments:
-  -h, --help  show this help message and exit
-  -jboss      hack jboss
-  -weblogic   hack weblogic
-  '''
-	sys.exit()
-
-if len(sys.argv) > 1:
+if len(sys.argv) < 5:
 	print ""
 
 parser = argparse.ArgumentParser(description='先用reshell.jar生成payload。')
